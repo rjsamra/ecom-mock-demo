@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ee;
+  --foreground: #1c1917;
+  --surface: #fffcf8;
+  --line: #e6dfd4;
+  --muted: #6f675e;
+  --navy: #1b3a4b;
+  --navy-dark: #122833;
+  --brass: #8d5a32;
+  --brass-soft: #f3e6d8;
+  --success: #1f6b45;
+  --danger: #9f2d2d;
+  --warning: #8a5a12;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-navy: var(--navy);
+  --color-navy-dark: var(--navy-dark);
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
