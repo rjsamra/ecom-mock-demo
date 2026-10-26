@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "./scripts/copilot-validate-feature-hook.sh",
+        "powershell": "bash ./scripts/copilot-validate-feature-hook.sh",
+        "cwd": ".",
+        "timeoutSec": 180
+      }
+    ]
+  }
+}
